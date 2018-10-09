@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 80px 500px 100px;
+    grid-gap: 5px;
+    grid-template-areas:
+        "h h h h h h h h h h h h h"
+        "n n n n n n n n n n n n n"
+        "m m m m m m m m m a a a a"
+        "f f f f f f f f f f f f f";
+}
+
+header {
+    grid-area: h;
+    background-color: goldenrod;
+}
+
+nav {
+    grid-area: n;
+    background-color: darkseagreen;
+}
+
+main {
+    grid-area: m;
+    background-color: deepskyblue;
+}
+
+acide {
+    grid-area: a;
+    background-color: coral;
+}
+
+footer {
+    grid-area: f;
+    background-color: brown;
+}
+
+@media screen and (max-width: 960px) {
+    .wrapper {
+        grid-template-rows: 100px 150px 500px 100px;
+        grid-template-areas:
+            "h h h h h h n n n n n n"
+            "a a a a a a a a a a a a"
+            "m m m m m m m m m m m m"
+            "f f f f f f f f f f f f";
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        grid-template-rows: 100px 100px 500px 150px 100px;
+        grid-template-areas:
+            "n n n n n n n n n n n n"
+            "h h h h h h h h h h h h"
+            "m m m m m m m m m m m m"
+            "a a a a a a a a a a a a"
+            "f f f f f f f f f f f f";
+    }
+}
