@@ -45,7 +45,7 @@ footer {
 
 @media screen and (max-width: 960px) {
     .wrapper {
-        width: 96%;
+        margin: auto 5px;
         grid-template-rows: 3em 6em 12em 3em;
     }
 
@@ -82,7 +82,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     .wrapper {
-        width: 99%;
+        margin: auto 5px;
         grid-template-rows: 3em 3em 12em 6em 3em;
     }
 
