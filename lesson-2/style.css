@@ -72,6 +72,14 @@ main {
 acide {
     grid-column: 9 / 13;
     grid-row: 3 / 3;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.reklama {
+    border: 5px double brown;
+    border-radius: 5px;
 }
 
 footer {
@@ -94,6 +102,7 @@ footer {
     nav {
         grid-column: 1 / 13;
         grid-row: 2 / 2;
+        font-size: 0.8em;
 
     }
 
@@ -106,6 +115,10 @@ footer {
     acide {
         grid-column: 1 / 13;
         grid-row: 3 / 3;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 0.8em;
 
     }
 
