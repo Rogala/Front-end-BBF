@@ -67,33 +67,37 @@ li {
 }
 
 .player {
-    background-image: url(../images/player_background.png);
+    max-width: 1400px;
+    background-color: #b50b1e;
     height: 80px;
-    margin-top: 100px;
-    position: relative;
 }
 
 .play_but_board {
     position: absolute;
     margin: 10px 0 0 230px;
+    width: 58px;
+    height: 58px;
+    border: white solid 2px;
+    border-radius: 50px;
 }
 
 .play_but {
     position: absolute;
-    margin: 27px 0 0 255px;
+    margin: 17px 0 0 25px;
 }
 
 .block_track {
-    width: 560px;
+    max-width: 560px;
     margin-left: 310px;
     font-family: "Montserrat-Regular";
     letter-spacing: 0px;
 }
 
-.name_track {}
+.name_track {
+    margin-top: 20px;
+}
 
 .time_track {
-    text-align: right;
     font-size: 12px;
     float: right;
 }
@@ -111,7 +115,7 @@ li {
 
 .line_track_ontime {
     position: absolute;
-    z-index: 200;
+    z-index: 101;
 
 }
 
@@ -119,17 +123,22 @@ li {
     position: absolute;
     margin-left: 64px;
     margin-top: -5px;
-    z-index: 300;
+    z-index: 102;
 }
 
 .player_button {
-    margin-left: 580px;
+    margin-left: 20px;
     margin-top: -18px;
     display: inline-flex;
+    position: relative;
 }
 
 .player_but_border {
+    width: 40px;
+    height: 40px;
     margin-right: 20px;
+    border: white solid 2px;
+    border-radius: 50px;
 }
 
 .volume {
@@ -139,60 +148,109 @@ li {
 
 .prev {
     position: absolute;
-    margin: 12px 0 0 75px;
+    margin: 12px 0 0 13px;
 }
 
 .next {
     position: absolute;
-    margin: 12px 0 0 135px;
+    margin: 12px 0 0 13px;
 }
 
 .repeat {
     position: absolute;
-    margin: 10px 0 0 192px;
+    margin: 10px 0 0 12px;
 }
 
 .playlist {
     position: absolute;
-    margin: 14px 0 0 252px;
+    margin: 14px 0 0 12px;
 }
 
-.genrestation {
-    height: 790px;
+.main {
+    min-height: 690px;
     color: black;
     font-size: 18px;
 }
 
+h2 {
+    margin-top: 100px;
+    margin-left: 220px;
+    font-size: 36px;
+}
+
 .musik_style {
-    width: 940px;
+    max-width: 980px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+
 }
 
 .style {
     width: 220px;
     height: 180px;
-    border-color: #e1e1e1;
-    border-width: 3px;
-    border-radius: 3px;
-    border-style: solid;
+    border: #e1e1e1 solid 1px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    box-sizing: border-box;
 }
 
 .load_more {
     width: 300px;
     height: 40px;
     color: #cd4d52;
-    border-color: #e1e1e1;
-    border-width: 3px;
+    border: #e1e1e1 solid 1px;
     border-radius: 5px;
     text-align: center;
-    padding-top: 20px;
-    border-style: solid;
-    margin: auto;
+    margin: 37px auto 0;
+    padding-top: 10px;
+    box-sizing: border-box;
 }
 
 h3 {
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-left: 220px;
+    font-size: 36px;
+}
+
+.events {
+    height: 485px;
+    background-image: url(../images/background_events.png)
+}
+
+.img_events {
+    z-index: 104;
+    margin-top: -100px;
+    float: right;
+    margin-right: 200px;
+}
+
+.news {
+    max-width: 980px;
+    min-height: 790px;
+    color: black;
+}
+
+.board_news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.item_news {
+    width: 300px;
+    height: 358px;
+    border: #e1e1e1 solid 1px;
+    border-radius: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 20px;
 }
