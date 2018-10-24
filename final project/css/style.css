@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "CaviarDreams_Bold";
+    src: url(../fonts/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+    font-family: "Lora-Bold";
+    src: url(../fonts/Lora-Bold.ttf);
+}
+
+body {
+    color: white;
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-image: url("../images/head.png");
+    height: 556px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+nav {
+    display: inline-flex;
+}
+
+.brand {
+    font-size: 36px;
+    font-family: "CaviarDreams_Bold";
+    margin-left: 230px
+}
+
+ul {
+    list-style: none;
+    margin-left: 260px;
+}
+
+li {
+    display: inline;
+    margin-right: 30px;
+
+}
+
+.slogan {
+    width: 550px;
+    margin-left: 230px;
+    margin-top: 100px;
+    font-size: 72px;
+    font-family: "Lora-Bold";
+}
+
+.player {
+    background-image: url(../images/player_background.png);
+    height: 80px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.play_but_board {
+    position: absolute;
+    margin: 10px 0 0 230px;
+}
+
+.play_but {
+    position: absolute;
+    margin: 27px 0 0 255px;
+}
+
+.block_track {
+    width: 560px;
+    margin-left: 310px;
+    font-family: "Montserrat-Regular";
+    letter-spacing: 0px;
+}
+
+.name_track {}
+
+.time_track {
+    text-align: right;
+    font-size: 12px;
+    float: right;
+}
+
+.line_track {
+    margin-top: 20px;
+    position: relative;
+}
+
+.line_track_full {
+    position: absolute;
+    z-index: 100;
+}
+
+
+.line_track_ontime {
+    position: absolute;
+    z-index: 200;
+
+}
+
+.circle_track_position {
+    position: absolute;
+    margin-left: 64px;
+    margin-top: -5px;
+    z-index: 300;
+}
+
+.player_button {
+    margin-left: 580px;
+    margin-top: -18px;
+    display: inline-flex;
+}
+
+.player_but_border {
+    margin-right: 20px;
+}
+
+.volume {
+    position: absolute;
+    margin: 10px 0 0 10px;
+}
+
+.prev {
+    position: absolute;
+    margin: 12px 0 0 75px;
+}
+
+.next {
+    position: absolute;
+    margin: 12px 0 0 135px;
+}
+
+.repeat {
+    position: absolute;
+    margin: 10px 0 0 192px;
+}
+
+.playlist {
+    position: absolute;
+    margin: 14px 0 0 252px;
+}
+
+.genrestation {
+    height: 790px;
+    color: black;
+    font-size: 18px;
+}
+
+.musik_style {
+    width: 940px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.style {
+    width: 220px;
+    height: 180px;
+    border-color: #e1e1e1;
+    border-width: 3px;
+    border-radius: 3px;
+}
+
+.load_more {
+    width: 300px;
+    height: 40px;
+    color: #cd4d52;
+    border-color: #e1e1e1;
+    border-width: 3px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 20px;
+    margin: auto;
+}
+
+h3 {
+    margin-top: 100px;
+}
